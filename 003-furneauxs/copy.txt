@@ -1,0 +1,30 @@
+Fonts:
+
+Body font: Roboto
+Headings:  David Libre
+
+Colors:
+
+Light grey:         #f6f6f8
+Pink:               #eeae9f
+Black:              #48353a
+Footer text:        #ccc9ca
+Liv background:     #f7f1ee
+Chelsea background: #ffffff
+Header:             #ffffff
+
+Copy:
+
+HEADLINE:
+The finest flowers at your fingertips
+
+SUBHEAD:
+Get London’s best seasonal bouquets, made lovingly by our hand-selected independent florists.
+
+QUOTE 1:
+“I order all my flowers from here. It’s the best service in town!”
+Liv, designer in Highgate
+
+QUOTE 2:
+“Seriously. They deliver incredible flowers every time I order.”
+Chelsea, artist in Shoreditch

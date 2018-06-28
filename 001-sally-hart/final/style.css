@@ -1,0 +1,59 @@
+body {
+	font-family: Arvo;
+	font-size: 16px;
+	line-height: 1.5;
+	
+	background-color: #004d9d;
+	color: #ffffff;
+}
+
+header {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px 0 0;
+  transition: all 0.5s;
+}
+
+a:hover {
+  color: #ff4141;
+}
+
+section {
+  height: 100vh;
+  
+  background-image: url(sally_1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+section.sally_2 {
+  background-image: url(sally_2.jpg);
+}
+
+section.sally_3 {
+  background-image: url(sally_3.jpg);
+}
+
+section.sally_4 {
+  background-image: url(sally_4.jpg);
+}
+
+

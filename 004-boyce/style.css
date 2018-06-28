@@ -1,0 +1,202 @@
+body{
+  font-family: Work Sans;
+  font-size:16px;
+  line-height: 1.5;
+  color:#fff;
+  background-color: #000;
+  /* Add some padding top to create the space for our header to sit inside of */
+  padding-top: 147px;
+}
+
+a{
+  color:#fff;
+  text-decoration: none;
+}
+
+header{
+  /* overflow: hidden; */
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:20px;
+  z-index:2;
+
+  /* flexbox is a modern css layout mode that gives us much more power
+     over how elements are positioned */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1{
+  /* float:left; */
+  width:64px;
+}
+
+header nav{
+  /* float:right; */
+  margin-right: 60px;
+}
+
+header nav a{
+  margin:10px;
+  transition: border 0.3s ease-in;
+  border-bottom: solid 2px rgba(0,0,0,0);
+  padding-bottom: 3px;
+}
+
+header nav a:hover{
+  border-bottom: solid 2px #555;
+  padding-bottom: 3px;
+}
+
+/* .selected{
+  border-bottom: solid 2px #fff;
+  padding-bottom:3px;
+} */
+
+.photos{
+  /* text-align: center; */
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.photo, .photo img{
+  /* inline block gives us a the best of both inline and
+    block elements allowing us  to stack them side by side and
+    also align our elements vertically in the row */
+  display: inline-block;
+  width: 300px;
+  margin: 10px;
+  /* vertical-align: top; */
+
+  /* By using position relative on the parent photo element,
+     our overlay will be positioned in relation to it. */
+  position:relative;
+  /* z-index: -1; */
+  /* my own f**king tricky way
+     which is not f**king perfect of course*/
+
+    transition: filter 0.3s;
+}
+
+
+.photo h2{
+  position: absolute;
+  /* left:0px;*/
+  top:-5px;  /* yeah, it can be negative */
+  font-size:20px;
+  line-height: 1.2;
+}
+
+
+
+.overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  margin-left: 10px;
+  /* font-size: 12px; */
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.7); /*rgba, a means alpha*/
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.overlay:hover{
+  opacity: 1;
+}
+
+.photo:hover img{
+  filter: grayscale(100%);
+}
+
+.small, .small img{
+  width:220px;
+}
+
+.large, .large img{
+  width:400px;
+}
+
+footer{
+  /* overflow: hidden; */
+  padding:5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* footer p{
+  float:left;
+}
+
+footer nav{
+  float:right;
+} */
+
+footer nav a{
+  width:24px;
+  margin-left: 5px;
+  display:inline-block;
+}
+
+/*List.html*/
+
+.list {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-top: 120px;
+}
+
+.list a img{
+  opacity:0;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  max-width: 500px;
+  /* is this will tell the browser to ignore any default mouse
+  interactions on this img element */
+  pointer-events: none;
+
+  transition: opacity 0.3s;
+}
+
+.list a{
+  font-size: 40px;
+}
+
+/* this is a pseudo element that allows us to insert content
+   before and after an element*/
+.list a:after{
+  content:'/';
+}
+
+.list a:last-child:after{
+  content:'';
+}
+
+.list a:hover img{
+  opacity: 1;
+}
+
+.listfooter{
+  min-height: calc(50vh - 100px);
+}
+/* That would be make the main section area be
+a minimum of 100% of the height of the browser
+but remove 100px for other bits of the page
+(e.g. the header or the footer itself). */

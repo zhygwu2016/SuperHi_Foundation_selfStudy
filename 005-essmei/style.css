@@ -1,0 +1,262 @@
+body{
+  font-family: Playfair Display;
+  font-size: 20px;
+  line-height: 1.3;
+  background-color:#f4f4f4;
+  color:#000000;
+}
+
+header{
+  background-color: #000;
+  border-top:solid 5px #FEEA34;
+  overflow: hidden;
+}
+
+header h1{
+  display:inline;
+}
+
+header h1 img{
+  width: 74px;
+  float:left;
+  display: inline;
+}
+
+header nav{
+  float:right;
+  display: inline;
+  /* margin-top: 25px; */
+}
+
+header.container{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a{
+  text-decoration: none;
+}
+
+.container{
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hero{
+  background-image: url(./assets/hero.jpg);
+  padding-top: 110px;
+  padding-bottom: 120px;
+  background-size: cover;
+  background-position: right center;
+}
+
+.hero h2{
+  font-size: 36px;
+  line-height: 1.3;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p{
+  font-size: 24px;
+}
+
+.intro{
+  max-width: 480px;
+}
+
+.hero{
+  margin-bottom: 20px;
+}
+
+.filters{
+  margin-bottom: 20px;
+}
+
+.filters a{
+  color:#000;
+  font-size:16px;
+  margin-right: 10px;
+  text-decoration: none;
+  display:inline;
+}
+
+.filters .container ul{
+  padding-left: 0px;
+  list-style: none;
+}
+
+.filters .container ul li{
+  display: inline;
+}
+
+/* .filters .container ul li a{
+  margin-bottom: 5px;
+} */
+
+.filters .show-filters{
+  display:none;
+}
+
+.filters .selected{
+  display:inline-block; /*solve the yellow border-bottom too long*/
+  font-weight: 700;
+  border-bottom: solid 3px #FEEA34;
+  padding-bottom: 1px;
+}
+
+.products .container{
+  display:flex;
+  flex-wrap:wrap;
+  overflow: hidden;
+}
+
+.products{
+  margin-bottom: 60px;
+}
+
+div.product{
+  width:33.333%;
+
+  /* we use a relative position so that our overlay latches on
+   and only position itself inside the contect of the product  element.
+   Otherwise it will position itself in relation to the page*/
+  position: relative;
+}
+
+div.product img{
+  width:100%;
+}
+
+.overlay{
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(254,234,52,0.7);
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  transition: opacity 0.5s ease; /* google ceaser css */
+}
+
+.product:hover .overlay{
+  opacity: 1;
+}
+
+.product h4{
+  font-weight: 700;
+  font-size: 18px;
+  position: absolute;
+  left:15px;
+}
+
+.product p{
+  font-weight: 700;
+  font-size: 36px;
+  position: absolute;
+  bottom:5px;
+  left:15px;
+}
+
+.filters .show-filters{
+  color:#BFBFB7;
+}
+
+@media(max-width:860px){
+
+  .hero{
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  div.product{
+    width:50%;
+  }
+
+  .container{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+}
+
+@media(max-width:770px){
+
+  .hero{
+    background-image: none;
+    background-color: #BFBFB7;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .intro{
+    max-width: none;
+  }
+
+}
+
+@media(max-width:540px){
+  .intro h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .intro p{
+    font-size: 16px;
+  }
+
+  /*20px is usually a good measure of gutter/padding to have for
+    mobile/smaller screens */
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .filters .show-filters{
+    display:block;
+  }
+}
+
+@media(max-width:480px){
+  body{
+    font-size: 16px;
+  }
+
+  div.product{
+    width:100%;
+    margin-bottom:20px;
+  }
+  div.product img{
+    width:100%;
+  }
+
+  .filters a{
+    display:block;
+  }
+
+  .filters li{
+    display:block;
+  }
+
+  .show-filters{
+    display:block;
+    margin-bottom: 2px;
+  }
+
+  .filters-list{
+    display:none;
+  }
+
+}
+
+@media(min-width:480px){
+  .filters-list{
+    /* Using !impertant makes sure a style gets applied
+    regardless of how specific it is */
+    display:block !important;
+  }
+}

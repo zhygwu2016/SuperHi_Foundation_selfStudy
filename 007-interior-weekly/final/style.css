@@ -1,0 +1,73 @@
+body {
+	font-family: Fjord One;
+	font-size: 18px;
+	line-height: 1.5;
+	
+	background-color: #ffffff;
+	color: #333333;
+	margin: 0 auto 300px auto;
+	width: 900px;
+  transition: background-color 1s;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  padding: 40px;
+  transition: top 2s;
+}
+
+header.hide {
+  top: -100px;
+}
+
+h1 {
+  float: left;
+	font-weight: 700;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  color: #333333;
+  text-decoration: none;
+  border-bottom: 1px solid #7fdbff;
+  margin: 0 0 0 15px;
+}
+
+section {
+  padding: 100px 0 100px 0;
+}
+
+section img {
+  width: 900px;
+  height: 600px;
+}
+
+div.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  font-size: 12px;
+}
+
+div.progress div.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background-color: #7fdbff;
+}
+
+
+
+
+

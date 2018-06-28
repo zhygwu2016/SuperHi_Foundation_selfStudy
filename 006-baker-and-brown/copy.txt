@@ -1,0 +1,26 @@
+TYPEFACE: 
+
+Biryani at bold weight 700 and ultra light 100
+
+FONT SIZES:
+
+Extra Large: 64px at 1.2 line-height
+Large: 48px at 1.2 line-height
+Medium: 32px at 1.2 line-height
+
+COLORS:
+
+Black: #000000
+Pink: #f8cede
+White: #ffffff
+
+COPY:
+
+Clothes as natural as you are
+
+Do one thing well.
+We make clothes. That’s it. Nothing else. No distractions. Nothing to steal our focus. 
+
+View lookbooks
+
+View our Autumn Winter 2016 collection

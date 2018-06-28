@@ -1,0 +1,155 @@
+body {
+	font-family: David Libre;
+	font-size: 16px;
+	line-height: 1.5;
+	
+	background-color: #ffffff;
+	color: #48353a;
+
+  text-align: center;
+}
+
+header {  
+  background-color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  overflow: hidden;
+}
+
+header img {
+  float: left;
+}
+
+header nav {
+  float: right;
+}
+
+header a {
+  padding: 10px;
+  color: #48353a;
+  text-decoration: none;
+}
+
+header a:hover {
+  border-bottom: 2px solid #48353a;
+}
+
+section.hero {
+  background-image: url(hero.jpg);
+  background-size: cover;
+  background-position: center;
+  
+  padding: 100px 0 100px 0;
+}
+
+section.hero h1 {
+  font-size: 64px;
+  font-weight: 700;
+  font-family: David Libre;
+  
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  
+  line-height: 1.2;
+}
+
+section.hero p {
+  max-width: 400px;
+  margin: 0 auto 0 auto;
+}
+
+section.flowers {
+  overflow: hidden;
+}
+
+section.flowers img {
+  float: left;
+  width: 33.33%;
+}
+
+section.quotes {
+  overflow: hidden;
+}
+
+section.quotes div {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+section.quotes div.quote1 {
+  background-color: #f7f1ee;
+}
+
+section.quotes div.quote2 {
+  background-color: #ffffff;
+}
+
+section.quotes img {
+  width: 75px;
+  border-radius: 50px;
+}
+
+section.quotes h2 {
+  font-family: David Libre;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 10px 0 10px 0;
+}
+
+section.fullbleed img {
+  width: 100%;
+}
+
+section.brands {
+  background-color: #ff851b;
+  color: #ffffff;
+  
+  padding: 40px 0 40px 0;
+  
+  font-weight: 700;
+  text-align: center;
+}
+
+section.brands img {
+  margin: 0 10px 0 10px;
+}
+
+footer {
+  background-color: #48353a;
+  color: #ccc9ca;
+  overflow: hidden;
+  padding: 20px;
+}
+
+footer img {
+  float: left;
+}
+
+footer p {
+  float: right;
+}
+
+
+@media (max-width: 760px) {
+  header h1 {
+    float: none;
+  }
+  
+  header nav {
+    float: none;
+  }
+  
+  section.flowers img {
+    width: auto;
+    float: none;
+  }
+  
+  section.quotes div {
+    width: auto;
+    float: none;
+  }
+  
+  section.quotes p {
+    display: none;
+  }
+}

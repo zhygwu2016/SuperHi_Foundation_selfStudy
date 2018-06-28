@@ -1,0 +1,21 @@
+Background: #000000
+Text color: #ffffff
+
+Font: Work Sans
+
+Navigation font size: 16px at 1.5 line height
+Hover font size: 48px at 1.2 line height
+List font size: 64px at 1.2 line height
+
+COPY:
+
+Black Line Yellow Box
+Desk Flowers
+Fence Sign Reach
+Green Grass Line
+Fill Outline
+Bollard Bag Black Grey
+Three Shutters
+Green Bag White Wall
+Temporary Barrier Bin
+Post Panel Frame

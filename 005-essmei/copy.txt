@@ -1,0 +1,31 @@
+TYPOGRAPHY:
+
+Font: Playfair Display
+Line Height: 1.3
+
+Desktop headline: 36px at 700 weight
+Desktop sub-heading: 24px at 400 weight
+Desktop item title: 16px at 400 weight
+Desktop item price: 14px at 400 weight
+
+Mobile headline: 18px at 700 weight
+Mobile sub-heading: 16px at 400 weight
+
+COLOURS:
+
+Page background:            #f4f4f4
+Yellow:                     #feea34
+Black:                      #000000
+Hero background mobile:     #bfbfb7
+Filter text colour:         #bfbfb7
+
+COPY:
+An exploration of colour inspired by movement, positivity + New York City. 
+Each bandana has been made and printed by hand.
+
+PRODUCTS:
+Bandana		£40
+Neckerchief	£35
+Wristkerchief	£20
+Tea towel	£25
+Balaclava	£35
