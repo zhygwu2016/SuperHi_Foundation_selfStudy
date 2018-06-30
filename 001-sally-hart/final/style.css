@@ -1,13 +1,16 @@
+/* The body tag contains everything in the page */
 body {
 	font-family: Arvo;
 	font-size: 16px;
 	line-height: 1.5;
-	
+
 	background-color: #004d9d;
 	color: #ffffff;
 }
 
 header {
+	/* Using fixed position allows us to precisely posotion an element
+     in relation to the browser viewport */
   position: fixed;
   top: 20px;
   left: 20px;
@@ -16,6 +19,10 @@ header {
 h1 {
 	font-size: 24px;
 	font-weight: 700;
+	/* margins are the go-to property for
+	when we want to create space betweeb elements on our oages */
+	margin-bottom: 10px;
+
 }
 
 footer {
@@ -31,29 +38,33 @@ a {
   transition: all 0.5s;
 }
 
+/* We can play styles to elements based on whether we are hovering over them,
+   this is called a pseudo selector */
 a:hover {
   color: #ff4141;
 }
 
 section {
   height: 100vh;
-  
-  background-image: url(sally_1.jpg);
+	/* vh stands for viewport height,
+	meaning it will be relative to the height of our browser window  */
+  background-image: url(../assets/sally_1.jpg);
   background-size: cover;
   background-position: center;
+
+	/* This will fix the background to the browser viewport,
+     rather than to the section, creating a reveal effect we scroll */
   background-attachment: fixed;
 }
 
-section.sally_2 {
-  background-image: url(sally_2.jpg);
+.sally_2 {
+  background-image: url(../assets/sally_2.jpg);
 }
 
-section.sally_3 {
-  background-image: url(sally_3.jpg);
+.sally_3 {
+  background-image: url(../assets/sally_3.jpg);
 }
 
-section.sally_4 {
-  background-image: url(sally_4.jpg);
+.sally_4 {
+  background-image: url(../assets/sally_4.jpg);
 }
-
-
