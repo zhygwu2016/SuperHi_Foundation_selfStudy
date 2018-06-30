@@ -6,7 +6,7 @@ body{
 }
 
 header{
-  padding:1px 15px;
+  padding:10px 15px;
   /*background-color: pink;*/
   /* When we float elements inside of our header, they are taken outside the regular box flow of the page,
      and as a result, our header collapses.
@@ -22,7 +22,6 @@ header h1{
 
 header nav{
   float: right;
-  margin-top: 27px;
 }
 
 header nav a{
@@ -31,6 +30,10 @@ header nav a{
   margin-left: 15px;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+header nav a:last-child{
+  margin-right: 25px;
 }
 
 .hero{
@@ -80,7 +83,7 @@ header nav a{
   width:50%;
   float: left;
   text-align: center;
-  padding:50px 0px 40px 0px;
+  padding:50px 0 40px 0;
 }
 
 .cream-background{
@@ -94,7 +97,7 @@ header nav a{
 }
 
 .quotes blockquote{
-  font-family: :David Libre;
+  font-family: David Libre;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.15;
@@ -219,6 +222,7 @@ footer p{
     margin-bottom: 0;
   }
 }
+
 @media(min-width:820px){
   header{
     position:fixed;
@@ -229,15 +233,11 @@ footer p{
 
     /* The box shadow is very similar to a photoshop shadow,
        it allows us to specify x/y axis, blur radius, spread and shadow color */
-    box-shadow: 0px 1px 5px 0px rgba(51,51,51,0.4);
+    box-shadow: 0 1px 5px 0 rgba(51,51,51,0.4);
   }
 
   .hero{
     /* This creates the empty space above our hero for the header to sit in */
-    margin-top:50px;
+    /* margin-top:30px; */
   }
-}
-
-header nav a:last-child{
-  margin-right: 25px;
 }

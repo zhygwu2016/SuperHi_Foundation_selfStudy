@@ -97,7 +97,6 @@ header nav a:hover{
 }
 
 
-
 .overlay{
   position: absolute;
   top:0;
@@ -194,7 +193,7 @@ footer nav a{
 }
 
 .listfooter{
-  min-height: calc(50vh - 100px);
+  min-height: calc(100vh - 100px);
 }
 /* That would be make the main section area be
 a minimum of 100% of the height of the browser
