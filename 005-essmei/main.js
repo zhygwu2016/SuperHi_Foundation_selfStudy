@@ -1,6 +1,5 @@
 
 console.log('It works!');
-
 // $('header').hide();
 // $('header').show();
 //$('.products').html('The products are all sold!');
@@ -46,7 +45,6 @@ $('.filters-list a').on('click',function(){
   // This will add a class name of selected to the current filters
   // link that we've clicked on
   $(this).addClass('selected');
-
 
   return false; // when click, block the link, so that we can see console when test
 

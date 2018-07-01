@@ -11,9 +11,9 @@ body{
 }
 
 header{
-  padding:60px 20px;
+  padding:40px 20px;
   text-align: center;
-  display: inline;
+  /* display: inline; */
   overflow: hidden;
 }
 
@@ -87,7 +87,6 @@ section.natural{
   transform: translateY(-50%);
   margin:0px;
 }
-
 
 section.one-thing img{
   width:100%;

@@ -6,7 +6,6 @@
 //whenever load the page, always display the firse slideshow
 var currentSlide = 0;
 
-
 // here we figure out how many slides we have, using .length property
 var totalSlides = $('.holder div').length;
 
@@ -87,7 +86,6 @@ $('.prev').on('click', function(){
   previousSlide();
 });
 
- 
 
 // whenever an event occurs in js we can also capture all the data that comes along with inspect
 $('body').on('keydown', function(event){

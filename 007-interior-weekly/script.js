@@ -25,7 +25,7 @@ $(document).on('scroll', function(){
   // otherwise #cdcccc7
 
  if(pixelsFromTop < 600){
-     $('body').css('background-color', '#fff');
+     $('body').css('background-color', '#ffffff');
  } else if(pixelsFromTop < 1400){
      $('body').css('background-color', '#a29c97');
  } else if(pixelsFromTop < 2200){
