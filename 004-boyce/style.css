@@ -195,7 +195,6 @@ footer nav a{
 .listfooter{
   min-height: calc(100vh - 100px);
 }
-/* That would be make the main section area be
-a minimum of 100% of the height of the browser
-but remove 100px for other bits of the page
+/* That would be make the main section area be a minimum of 100% of
+the height of the browser but remove 100px for other bits of the page
 (e.g. the header or the footer itself). */
